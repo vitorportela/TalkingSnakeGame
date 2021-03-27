@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: white;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+#game-board{
+    background: linear-gradient(-37deg, teal, purple, orange) center/cover no-repeat;
+    height: 90vmin;
+    width: 90vmin;
+    z-index: 1;
+    display: grid;
+    border: 0.6vmin solid black; 
+    border-radius: 10px;
+    grid-template-columns: repeat(21,1fr);
+    grid-template-rows: repeat(21,1fr);
+}
+
+.hud{
+    background: gray;
+    height: 5vmin;
+    width: 90vmin;
+    z-index: 1;
+    display: flex;
+    position: absolute;
+    top: 0;
+    border: 0.6vmin solid black; 
+    border-radius: 10px;
+}
+.placar{
+    width: 100%;
+    padding: 1vmin;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 3vmin;
+}
+.hud img{
+    border: 0.4vmin solid black;
+    border-radius: 50%;
+}
+
+
+.words{
+    display: block;    
+    position: absolute;
+    height: 90vmin;
+    width: 90vmin;
+    z-index: 2;
+    padding: 2vmin;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 3vmin;
+}
+
+.gamemenu{
+    display: block;    
+    position: absolute;
+    background: rgba(54, 54, 54, 0.6);
+    height: 60vmin;
+    width: 50vmin;
+    border-radius: 15px;
+    box-shadow: 2px 2px 4px #000000;
+    z-index: 4;
+}
+
+.btComum{
+    font-size: 3vmin;
+    font-weight: bold;
+    width: 13vmin;
+    height: 5vmin;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: gray;
+    border-radius: 8px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.btStart{
+    margin-top: 5vmin;
+    font-size: 3vmin;
+    font-weight: bold;
+    width: 90%;
+    height: 5vmin;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(192, 192, 0);
+    border-radius: 8px;
+    border: 1px solid black;
+    cursor: pointer;
+
+}
+
+.botoes{
+    padding-bottom: 2vmin;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    
+}
+.space{
+    width: 100%;
+    height: 2vmin;
+}
+.subtitulo{
+    padding: 1vmin;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 3vmin;
+
+}
+
+.titulo{
+    border-top: 5fr;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+    font-size: 5.5vmin;
+    color: blanchedalmond;
+    text-shadow:2px 2px 2px black;
+    font-family: 'Lobster', cursive;    
+}
+
+.boardpulse{
+    background: rgba(122, 122, 122, 0.30);
+    border-radius: 35%;
+    filter: blur(28px);
+    z-index: -1;
+}
+
+.snake{
+    background: radial-gradient(rgb(0, 150, 0),rgb(0, 130, 0), rgb(0, 100, 0), rgb(0, 75, 0), rgb(0, 50, 0), rgb(0, 15, 0));
+    border: 0.6vmin solid black; 
+    border-radius: 25%;
+    z-index: 3;
+}
+
+.food{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+}
+
+.food p{
+    text-align: center;
+}
+
+
+

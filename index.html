@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SnakeVoice</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <script src="./game/index.js" defer type="module"></script>
+</head>
+<body>  
+        <div class="gamemenu">
+            <h1 class="titulo">Talking Snake Game</h1>
+            <div class="space"></div>
+            <div class="subtitulo"><p>Voice Config</p></div>
+            <div class="botoes">
+                <div class="btOFF btComum"><p>OFF</p></div>
+                <div class="btENG btComum" style="background-color: orange;"><p>ENG</p></div>
+                <div class="btPT btComum"><p>PT</p></div>
+            </div>
+            <div class="subtitulo"><p>Board Size</p></div>
+            <div class="botoes">
+                <div class="bt11 btComum"><p>10</p></div>
+                <div class="bt15 btComum" style="background-color: orange;"><p>15</p></div>
+                <div class="bt21 btComum"><p>20</p></div>
+            </div>
+            <div class="subtitulo"><p>Snake Speed</p></div>
+            <div class="botoes">
+                <div class="btex2 btComum" style="background-color: orange;"><p>slow</p></div>
+                <div class="btex3 btComum"><p>normal</p></div>
+                <div class="btex4 btComum"><p>fast</p></div>
+            </div>
+            <div class="botoes">
+                <div class='btStart'>
+                    <p>🐍  START  🐍</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="hud">
+            <p class="placar">0000</p>
+            <img class="flag" src="./img/usa-circular.png" alt="flag">
+        </div>
+        <div class="words">
+            <P class="um">Welcome to Talkin Snake Game!!!</P>
+            <p class="dois"></p>
+            <p class="tres"></p>
+            <p class="quatro"></p>
+            <p class="cinco"></p>
+        </div>
+        <div id="game-board"></div>
+</body>
+</html>
